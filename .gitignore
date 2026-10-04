@@ -1,0 +1,6 @@
+# Only upload assignment folders (HW*) and repo docs.
+# Course materials like VHDL-1.pdf stay local.
+/*
+!/.gitignore
+!/README.md
+!/HW*/
