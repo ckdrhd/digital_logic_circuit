@@ -1,0 +1,177 @@
+===== logic_test_tb
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: abcd=0000 -> out1='0' out2='0'
+#    Time: 10 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=0001 -> out1='0' out2='1'
+#    Time: 20 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=0010 -> out1='0' out2='1'
+#    Time: 30 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=0011 -> out1='0' out2='1'
+#    Time: 40 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=0100 -> out1='0' out2='1'
+#    Time: 50 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=0101 -> out1='0' out2='1'
+#    Time: 60 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=0110 -> out1='0' out2='1'
+#    Time: 70 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=0111 -> out1='0' out2='1'
+#    Time: 80 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=1000 -> out1='0' out2='1'
+#    Time: 90 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=1001 -> out1='0' out2='1'
+#    Time: 100 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=1010 -> out1='0' out2='1'
+#    Time: 110 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=1011 -> out1='0' out2='1'
+#    Time: 120 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=1100 -> out1='0' out2='1'
+#    Time: 130 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=1101 -> out1='0' out2='1'
+#    Time: 140 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=1110 -> out1='0' out2='1'
+#    Time: 150 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: abcd=1111 -> out1='1' out2='1'
+#    Time: 160 ns  Iteration: 0  Instance: /logic_test_tb
+# ** Note: Simulation done
+#    Time: 160 ns  Iteration: 0  Instance: /logic_test_tb
+# Errors: 0, Warnings: 0
+===== mux8_1_tb
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: ch=000 selects input 0 OK
+#    Time: 80 ns  Iteration: 0  Instance: /mux8_1_tb
+# ** Note: ch=001 selects input 1 OK
+#    Time: 160 ns  Iteration: 0  Instance: /mux8_1_tb
+# ** Note: ch=010 selects input 2 OK
+#    Time: 240 ns  Iteration: 0  Instance: /mux8_1_tb
+# ** Note: ch=011 selects input 3 OK
+#    Time: 320 ns  Iteration: 0  Instance: /mux8_1_tb
+# ** Note: ch=100 selects input 4 OK
+#    Time: 400 ns  Iteration: 0  Instance: /mux8_1_tb
+# ** Note: ch=101 selects input 5 OK
+#    Time: 480 ns  Iteration: 0  Instance: /mux8_1_tb
+# ** Note: ch=110 selects input 6 OK
+#    Time: 560 ns  Iteration: 0  Instance: /mux8_1_tb
+# ** Note: ch=111 selects input 7 OK
+#    Time: 640 ns  Iteration: 0  Instance: /mux8_1_tb
+# ** Note: Simulation done
+#    Time: 640 ns  Iteration: 0  Instance: /mux8_1_tb
+# Errors: 0, Warnings: 0
+===== led_letter_tb
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: en=1 dat=000 -> 11101110 (A)
+#    Time: 10 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: en=1 dat=001 -> 00111110 (b)
+#    Time: 20 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: en=1 dat=010 -> 10011100 (C)
+#    Time: 30 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: en=1 dat=011 -> 01111010 (d)
+#    Time: 40 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: en=1 dat=100 -> 10001110 (F)
+#    Time: 50 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: en=1 dat=101 -> 11110110 (g)
+#    Time: 60 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: en=1 dat=110 -> 00000000 (-)
+#    Time: 70 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: en=1 dat=111 -> 00000000 (-)
+#    Time: 80 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: en=0 -> ZZZZZZZZ
+#    Time: 90 ns  Iteration: 0  Instance: /led_letter_tb
+# ** Note: Simulation done
+#    Time: 90 ns  Iteration: 0  Instance: /led_letter_tb
+# Errors: 0, Warnings: 0
+===== vote25_tb
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: votes=0 -> result='0'
+#    Time: 10 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=1 -> result='0'
+#    Time: 20 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=2 -> result='0'
+#    Time: 30 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=3 -> result='0'
+#    Time: 40 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=4 -> result='0'
+#    Time: 50 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=5 -> result='0'
+#    Time: 60 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=6 -> result='0'
+#    Time: 70 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=7 -> result='0'
+#    Time: 80 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=8 -> result='0'
+#    Time: 90 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=9 -> result='0'
+#    Time: 100 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=10 -> result='0'
+#    Time: 110 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=11 -> result='0'
+#    Time: 120 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=12 -> result='0'
+#    Time: 130 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=13 -> result='1'
+#    Time: 140 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=14 -> result='1'
+#    Time: 150 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=15 -> result='1'
+#    Time: 160 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=16 -> result='1'
+#    Time: 170 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=17 -> result='1'
+#    Time: 180 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=18 -> result='1'
+#    Time: 190 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=19 -> result='1'
+#    Time: 200 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=20 -> result='1'
+#    Time: 210 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=21 -> result='1'
+#    Time: 220 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=22 -> result='1'
+#    Time: 230 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=23 -> result='1'
+#    Time: 240 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=24 -> result='1'
+#    Time: 250 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: votes=25 -> result='1'
+#    Time: 260 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: scattered 13 votes -> result='1'
+#    Time: 270 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: scattered 12 votes -> result='0'
+#    Time: 280 ns  Iteration: 0  Instance: /vote25_tb
+# ** Note: Simulation done
+#    Time: 280 ns  Iteration: 0  Instance: /vote25_tb
+# Errors: 0, Warnings: 0
+===== count_ones_tb
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: ones=0 -> 11111100 (0)
+#    Time: 10 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=1 -> 01100000 (1)
+#    Time: 20 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=2 -> 11011010 (2)
+#    Time: 30 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=3 -> 11110010 (3)
+#    Time: 40 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=4 -> 01100110 (4)
+#    Time: 50 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=5 -> 10110110 (5)
+#    Time: 60 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=6 -> 10111110 (6)
+#    Time: 70 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=7 -> 11100000 (7)
+#    Time: 80 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=8 -> 11111110 (8)
+#    Time: 90 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=9 -> 11100110 (9)
+#    Time: 100 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=10 -> 11101110 (A)
+#    Time: 110 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=11 -> 00111110 (b)
+#    Time: 120 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=12 -> 10011100 (C)
+#    Time: 130 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: ones=13 -> 01111010 (d)
+#    Time: 140 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: en=0 -> 00000000
+#    Time: 150 ns  Iteration: 0  Instance: /count_ones_tb
+# ** Note: Simulation done
+#    Time: 150 ns  Iteration: 0  Instance: /count_ones_tb
+# Errors: 0, Warnings: 0

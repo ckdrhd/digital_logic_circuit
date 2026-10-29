@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool map="Button2" name="Poke Tool"/>
+    <tool map="Button3" name="Menu Tool"/>
+    <tool map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool name="Poke Tool"/>
+    <tool name="Edit Tool"/>
+    <tool name="Wiring Tool"/>
+    <tool name="Text Tool"/>
+    <tool name="Image"/>
+    <sep/>
+    <tool name="Pin"/>
+    <tool name="Pin">
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </tool>
+    <sep/>
+    <tool name="NOT Gate"/>
+    <tool name="AND Gate"/>
+    <tool name="OR Gate"/>
+    <tool name="XOR Gate"/>
+    <tool name="NAND Gate"/>
+    <tool name="NOR Gate"/>
+    <sep/>
+    <tool name="D Flip-Flop"/>
+    <tool name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="9" loc="(560,120)" name="Text">
+      <a name="text" val="Problem 5: number of 1s in vt(13 downto 1) on a 7-segment display"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(700,200)" name="count_ones">
+    </comp>
+    <comp lib="0" loc="(400,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="en"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="6" loc="(100,380)" name="DipSwitch">
+      <a name="number" val="13"/>
+    </comp>
+    <comp lib="0" loc="(100,300)" name="Splitter">
+      <a name="fanout" val="13"/>
+      <a name="incoming" val="13"/>
+      <a name="facing" val="south"/>
+      <a name="bit0" val="12"/>
+      <a name="bit1" val="11"/>
+      <a name="bit2" val="10"/>
+      <a name="bit3" val="9"/>
+      <a name="bit4" val="8"/>
+      <a name="bit5" val="7"/>
+      <a name="bit6" val="6"/>
+      <a name="bit7" val="5"/>
+      <a name="bit8" val="4"/>
+      <a name="bit9" val="3"/>
+      <a name="bit10" val="2"/>
+      <a name="bit11" val="1"/>
+      <a name="bit12" val="0"/>
+    </comp>
+    <comp lib="0" loc="(740,200)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="facing" val="east"/>
+      <a name="appear" val="right"/>
+      <a name="spacing" val="3"/>
+      <a name="bit0" val="7"/>
+      <a name="bit1" val="6"/>
+      <a name="bit2" val="5"/>
+      <a name="bit3" val="4"/>
+      <a name="bit4" val="3"/>
+      <a name="bit5" val="2"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="0"/>
+    </comp>
+    <comp lib="0" loc="(800,210)" name="Tunnel">
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="0" loc="(800,240)" name="Tunnel">
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="0" loc="(800,270)" name="Tunnel">
+      <a name="label" val="c"/>
+    </comp>
+    <comp lib="0" loc="(800,300)" name="Tunnel">
+      <a name="label" val="d"/>
+    </comp>
+    <comp lib="0" loc="(800,330)" name="Tunnel">
+      <a name="label" val="e"/>
+    </comp>
+    <comp lib="0" loc="(800,360)" name="Tunnel">
+      <a name="label" val="f"/>
+    </comp>
+    <comp lib="0" loc="(800,390)" name="Tunnel">
+      <a name="label" val="g"/>
+    </comp>
+    <comp lib="0" loc="(800,420)" name="Tunnel">
+      <a name="label" val="dp"/>
+    </comp>
+    <comp lib="6" loc="(960,240)" name="7-Segment Display">
+    </comp>
+    <comp lib="0" loc="(960,220)" name="Tunnel">
+      <a name="label" val="g"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(970,180)" name="Tunnel">
+      <a name="label" val="f"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(980,220)" name="Tunnel">
+      <a name="label" val="a"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(990,180)" name="Tunnel">
+      <a name="label" val="b"/>
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(960,320)" name="Tunnel">
+      <a name="label" val="e"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(970,360)" name="Tunnel">
+      <a name="label" val="d"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(980,320)" name="Tunnel">
+      <a name="label" val="c"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(990,360)" name="Tunnel">
+      <a name="label" val="dp"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <wire from="(400,200)" to="(480,200)"/>
+    <wire from="(110,380)" to="(110,320)"/>
+    <wire from="(120,380)" to="(120,320)"/>
+    <wire from="(130,380)" to="(130,320)"/>
+    <wire from="(140,380)" to="(140,320)"/>
+    <wire from="(150,380)" to="(150,320)"/>
+    <wire from="(160,380)" to="(160,320)"/>
+    <wire from="(170,380)" to="(170,320)"/>
+    <wire from="(180,380)" to="(180,320)"/>
+    <wire from="(190,380)" to="(190,320)"/>
+    <wire from="(200,380)" to="(200,320)"/>
+    <wire from="(210,380)" to="(210,320)"/>
+    <wire from="(220,380)" to="(220,320)"/>
+    <wire from="(230,380)" to="(230,320)"/>
+    <wire from="(100,300)" to="(100,220)"/>
+    <wire from="(100,220)" to="(480,220)"/>
+    <wire from="(700,200)" to="(740,200)"/>
+    <wire from="(760,210)" to="(800,210)"/>
+    <wire from="(760,240)" to="(800,240)"/>
+    <wire from="(760,270)" to="(800,270)"/>
+    <wire from="(760,300)" to="(800,300)"/>
+    <wire from="(760,330)" to="(800,330)"/>
+    <wire from="(760,360)" to="(800,360)"/>
+    <wire from="(760,390)" to="(800,390)"/>
+    <wire from="(760,420)" to="(800,420)"/>
+    <wire from="(960,240)" to="(960,220)"/>
+    <wire from="(970,240)" to="(970,180)"/>
+    <wire from="(980,240)" to="(980,220)"/>
+    <wire from="(990,240)" to="(990,180)"/>
+    <wire from="(960,300)" to="(960,320)"/>
+    <wire from="(970,300)" to="(970,360)"/>
+    <wire from="(980,300)" to="(980,320)"/>
+    <wire from="(990,300)" to="(990,360)"/>
+  </circuit>
+  <vhdl appearance="logisim_evolution" name="count_ones">-- Problem 5: count the '1's in a 13-bit vector and show it on a 7-segment display
+-- 0-9 -&gt; digits, 10-15 -&gt; A b C d E F, en = '0' -&gt; display off
+-- display(7 downto 0) = a b c d e f g dp
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity count_ones is
+  port (
+    en      : in  std_logic;
+    vt      : in  std_logic_vector(13 downto 1);
+    display : out std_logic_vector(7 downto 0)
+  );
+end count_ones;
+
+architecture bhv of count_ones is
+begin
+  process (en, vt)
+    variable sum : integer range 0 to 15;
+  begin
+    sum := 0;
+    for i in 1 to 13 loop
+      if vt(i) = '1' then
+        sum := sum + 1;
+      end if;
+    end loop;
+
+    if en = '0' then
+      display &lt;= "00000000";
+    else
+      case sum is
+        when 0      =&gt; display &lt;= "11111100";
+        when 1      =&gt; display &lt;= "01100000";
+        when 2      =&gt; display &lt;= "11011010";
+        when 3      =&gt; display &lt;= "11110010";
+        when 4      =&gt; display &lt;= "01100110";
+        when 5      =&gt; display &lt;= "10110110";
+        when 6      =&gt; display &lt;= "10111110";
+        when 7      =&gt; display &lt;= "11100000";
+        when 8      =&gt; display &lt;= "11111110";
+        when 9      =&gt; display &lt;= "11100110";
+        when 10     =&gt; display &lt;= "11101110";  -- A
+        when 11     =&gt; display &lt;= "00111110";  -- b
+        when 12     =&gt; display &lt;= "10011100";  -- C
+        when 13     =&gt; display &lt;= "01111010";  -- d
+        when 14     =&gt; display &lt;= "10011110";  -- E
+        when others =&gt; display &lt;= "10001110";  -- F
+      end case;
+    end if;
+  end process;
+end bhv;
+</vhdl>
+</project>

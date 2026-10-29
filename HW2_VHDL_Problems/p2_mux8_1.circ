@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool map="Button2" name="Poke Tool"/>
+    <tool map="Button3" name="Menu Tool"/>
+    <tool map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool name="Poke Tool"/>
+    <tool name="Edit Tool"/>
+    <tool name="Wiring Tool"/>
+    <tool name="Text Tool"/>
+    <tool name="Image"/>
+    <sep/>
+    <tool name="Pin"/>
+    <tool name="Pin">
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </tool>
+    <sep/>
+    <tool name="NOT Gate"/>
+    <tool name="AND Gate"/>
+    <tool name="OR Gate"/>
+    <tool name="XOR Gate"/>
+    <tool name="NAND Gate"/>
+    <tool name="NOR Gate"/>
+    <sep/>
+    <tool name="D Flip-Flop"/>
+    <tool name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="9" loc="(390,140)" name="Text">
+      <a name="text" val="Problem 2: 8-to-1 multiplexer"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(500,200)" name="mux8_1">
+    </comp>
+    <comp lib="0" loc="(180,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="a"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(180,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="b"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(180,240)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="c"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(180,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="d"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(180,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="e"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(180,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="f"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(180,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="g"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(180,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="h"/>
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="0" loc="(180,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="east"/>
+      <a name="label" val="ch"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(580,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="data"/>
+      <a name="type" val="output"/>
+      <a name="width" val="1"/>
+    </comp>
+    <wire from="(180,200)" to="(280,200)"/>
+    <wire from="(180,220)" to="(280,220)"/>
+    <wire from="(180,240)" to="(280,240)"/>
+    <wire from="(180,260)" to="(280,260)"/>
+    <wire from="(180,280)" to="(280,280)"/>
+    <wire from="(180,300)" to="(280,300)"/>
+    <wire from="(180,320)" to="(280,320)"/>
+    <wire from="(180,340)" to="(280,340)"/>
+    <wire from="(180,360)" to="(280,360)"/>
+    <wire from="(500,200)" to="(580,200)"/>
+  </circuit>
+  <vhdl appearance="logisim_evolution" name="mux8_1">-- Problem 2: 8-to-1 multiplexer
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux8_1 is
+  port (
+    a, b, c, d, e, f, g, h : in  std_logic;
+    ch                     : in  std_logic_vector(2 downto 0);
+    data                   : out std_logic
+  );
+end mux8_1;
+
+architecture bhv of mux8_1 is
+begin
+  process (a, b, c, d, e, f, g, h, ch)
+  begin
+    case ch is
+      when "000"  =&gt; data &lt;= a;
+      when "001"  =&gt; data &lt;= b;
+      when "010"  =&gt; data &lt;= c;
+      when "011"  =&gt; data &lt;= d;
+      when "100"  =&gt; data &lt;= e;
+      when "101"  =&gt; data &lt;= f;
+      when "110"  =&gt; data &lt;= g;
+      when "111"  =&gt; data &lt;= h;
+      when others =&gt; data &lt;= '0';
+    end case;
+  end process;
+end bhv;
+</vhdl>
+</project>

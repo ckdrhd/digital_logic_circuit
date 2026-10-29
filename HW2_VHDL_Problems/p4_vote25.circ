@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool map="Button2" name="Poke Tool"/>
+    <tool map="Button3" name="Menu Tool"/>
+    <tool map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool name="Poke Tool"/>
+    <tool name="Edit Tool"/>
+    <tool name="Wiring Tool"/>
+    <tool name="Text Tool"/>
+    <tool name="Image"/>
+    <sep/>
+    <tool name="Pin"/>
+    <tool name="Pin">
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </tool>
+    <sep/>
+    <tool name="NOT Gate"/>
+    <tool name="AND Gate"/>
+    <tool name="OR Gate"/>
+    <tool name="XOR Gate"/>
+    <tool name="NAND Gate"/>
+    <tool name="NOR Gate"/>
+    <sep/>
+    <tool name="D Flip-Flop"/>
+    <tool name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="9" loc="(500,120)" name="Text">
+      <a name="text" val="Problem 4: 25-person voting machine (result = 1 when 13 or more vote 1)"/>
+      <a name="font" val="SansSerif bold 16"/>
+    </comp>
+    <comp loc="(700,200)" name="vote25">
+    </comp>
+    <comp lib="6" loc="(100,380)" name="DipSwitch">
+      <a name="number" val="25"/>
+    </comp>
+    <comp lib="0" loc="(100,300)" name="Splitter">
+      <a name="fanout" val="25"/>
+      <a name="incoming" val="25"/>
+      <a name="facing" val="south"/>
+      <a name="bit0" val="24"/>
+      <a name="bit1" val="23"/>
+      <a name="bit2" val="22"/>
+      <a name="bit3" val="21"/>
+      <a name="bit4" val="20"/>
+      <a name="bit5" val="19"/>
+      <a name="bit6" val="18"/>
+      <a name="bit7" val="17"/>
+      <a name="bit8" val="16"/>
+      <a name="bit9" val="15"/>
+      <a name="bit10" val="14"/>
+      <a name="bit11" val="13"/>
+      <a name="bit12" val="12"/>
+      <a name="bit13" val="11"/>
+      <a name="bit14" val="10"/>
+      <a name="bit15" val="9"/>
+      <a name="bit16" val="8"/>
+      <a name="bit17" val="7"/>
+      <a name="bit18" val="6"/>
+      <a name="bit19" val="5"/>
+      <a name="bit20" val="4"/>
+      <a name="bit21" val="3"/>
+      <a name="bit22" val="2"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="0"/>
+    </comp>
+    <comp lib="0" loc="(780,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="result"/>
+      <a name="type" val="output"/>
+      <a name="width" val="1"/>
+    </comp>
+    <wire from="(110,380)" to="(110,320)"/>
+    <wire from="(120,380)" to="(120,320)"/>
+    <wire from="(130,380)" to="(130,320)"/>
+    <wire from="(140,380)" to="(140,320)"/>
+    <wire from="(150,380)" to="(150,320)"/>
+    <wire from="(160,380)" to="(160,320)"/>
+    <wire from="(170,380)" to="(170,320)"/>
+    <wire from="(180,380)" to="(180,320)"/>
+    <wire from="(190,380)" to="(190,320)"/>
+    <wire from="(200,380)" to="(200,320)"/>
+    <wire from="(210,380)" to="(210,320)"/>
+    <wire from="(220,380)" to="(220,320)"/>
+    <wire from="(230,380)" to="(230,320)"/>
+    <wire from="(240,380)" to="(240,320)"/>
+    <wire from="(250,380)" to="(250,320)"/>
+    <wire from="(260,380)" to="(260,320)"/>
+    <wire from="(270,380)" to="(270,320)"/>
+    <wire from="(280,380)" to="(280,320)"/>
+    <wire from="(290,380)" to="(290,320)"/>
+    <wire from="(300,380)" to="(300,320)"/>
+    <wire from="(310,380)" to="(310,320)"/>
+    <wire from="(320,380)" to="(320,320)"/>
+    <wire from="(330,380)" to="(330,320)"/>
+    <wire from="(340,380)" to="(340,320)"/>
+    <wire from="(350,380)" to="(350,320)"/>
+    <wire from="(100,300)" to="(100,200)"/>
+    <wire from="(100,200)" to="(480,200)"/>
+    <wire from="(700,200)" to="(780,200)"/>
+  </circuit>
+  <vhdl appearance="logisim_evolution" name="vote25">-- Problem 4: 25-person voting machine
+-- result = '1' when 13 or more of the 25 inputs are '1'
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity vote25 is
+  port (
+    vt     : in  std_logic_vector(25 downto 1);
+    result : out std_logic
+  );
+end vote25;
+
+architecture bhv of vote25 is
+begin
+  process (vt)
+    variable sum : integer range 0 to 25;
+  begin
+    sum := 0;
+    for i in 1 to 25 loop
+      if vt(i) = '1' then
+        sum := sum + 1;
+      end if;
+    end loop;
+
+    if sum &gt;= 13 then
+      result &lt;= '1';
+    else
+      result &lt;= '0';
+    end if;
+  end process;
+end bhv;
+</vhdl>
+</project>
