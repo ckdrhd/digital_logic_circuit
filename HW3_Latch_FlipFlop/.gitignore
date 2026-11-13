@@ -1,0 +1,6 @@
+# Questa build outputs
+work/
+transcript
+*.wlf
+modelsim.ini
+*.autosave

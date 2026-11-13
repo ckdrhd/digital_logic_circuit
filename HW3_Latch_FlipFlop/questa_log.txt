@@ -1,0 +1,155 @@
+===== rs_latch_tb
+# ** Note: (vsim-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: Reset: r=1 s=0 -> q=0 qn=1
+#    Time: 10 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Hold after Reset: r=0 s=0 -> q=0 qn=1
+#    Time: 20 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Set: r=0 s=1 -> q=1 qn=0
+#    Time: 30 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Hold after Set: r=0 s=0 -> q=1 qn=0
+#    Time: 40 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Forbidden: r=1 s=1 -> q=0 qn=0
+#    Time: 50 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Forbidden, s released first: r=1 s=0 -> q=0 qn=1
+#    Time: 60 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Hold: r=0 s=0 -> q=0 qn=1
+#    Time: 70 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Forbidden: r=1 s=1 -> q=0 qn=0
+#    Time: 80 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Forbidden, r released first: r=0 s=1 -> q=1 qn=0
+#    Time: 90 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Hold: r=0 s=0 -> q=1 qn=0
+#    Time: 100 ns  Iteration: 0  Instance: /rs_latch_tb
+# ** Note: Simulation done
+#    Time: 100 ns  Iteration: 0  Instance: /rs_latch_tb
+# Errors: 0, Warnings: 0
+===== d_latch_tb
+# ** Note: (vsim-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: Transparent: en=1 d=0 -> q=0 qn=1
+#    Time: 10 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Transparent: en=1 d=1 -> q=1 qn=0
+#    Time: 20 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Transparent: en=1 d=0 -> q=0 qn=1
+#    Time: 30 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Transparent: en=1 d=1 -> q=1 qn=0
+#    Time: 40 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Latched q=1: en=0 d=1 -> q=1 qn=0
+#    Time: 50 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Hold, d changes: en=0 d=0 -> q=1 qn=0
+#    Time: 60 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Hold, d changes: en=0 d=1 -> q=1 qn=0
+#    Time: 70 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Transparent: en=1 d=0 -> q=0 qn=1
+#    Time: 80 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Latched q=0: en=0 d=0 -> q=0 qn=1
+#    Time: 90 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Hold, d changes: en=0 d=1 -> q=0 qn=1
+#    Time: 100 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Hold, d changes: en=0 d=0 -> q=0 qn=1
+#    Time: 110 ns  Iteration: 0  Instance: /d_latch_tb
+# ** Note: Simulation done
+#    Time: 110 ns  Iteration: 0  Instance: /d_latch_tb
+# Errors: 0, Warnings: 0
+===== d_flipflop_tb
+# ** Note: (vsim-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: clk=0, d changes: clk=0 d=1 -> q=0 qn=1
+#    Time: 10 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: Rising edge captures 1: clk=1 d=1 -> q=1 qn=0
+#    Time: 20 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: clk=1, d changes: clk=1 d=0 -> q=1 qn=0
+#    Time: 30 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: Falling edge: clk=0 d=0 -> q=1 qn=0
+#    Time: 40 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: clk=0, d changes: clk=0 d=1 -> q=1 qn=0
+#    Time: 50 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: clk=0, d changes: clk=0 d=0 -> q=1 qn=0
+#    Time: 60 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: Rising edge captures 0: clk=1 d=0 -> q=0 qn=1
+#    Time: 70 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: clk=1, d changes: clk=1 d=1 -> q=0 qn=1
+#    Time: 80 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: Falling edge: clk=0 d=1 -> q=0 qn=1
+#    Time: 90 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: Rising edge captures 1: clk=1 d=1 -> q=1 qn=0
+#    Time: 100 ns  Iteration: 0  Instance: /d_flipflop_tb
+# ** Note: Simulation done
+#    Time: 100 ns  Iteration: 0  Instance: /d_flipflop_tb
+# Errors: 0, Warnings: 0
+===== jk_flipflop_tb
+# ** Note: (vsim-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: Reset: j=0 k=1 -> q=0 qn=1
+#    Time: 10 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Hold: j=0 k=0 -> q=0 qn=1
+#    Time: 25 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Set: j=1 k=0 -> q=1 qn=0
+#    Time: 40 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Hold: j=0 k=0 -> q=1 qn=0
+#    Time: 55 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Toggle: j=1 k=1 -> q=0 qn=1
+#    Time: 70 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Toggle: j=1 k=1 -> q=1 qn=0
+#    Time: 85 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Toggle: j=1 k=1 -> q=0 qn=1
+#    Time: 100 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Set: j=1 k=0 -> q=1 qn=0
+#    Time: 115 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Reset: j=0 k=1 -> q=0 qn=1
+#    Time: 130 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: j pulse during clk=0 ignored: q=0
+#    Time: 150 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# ** Note: Simulation done
+#    Time: 155 ns  Iteration: 0  Instance: /jk_flipflop_tb
+# Errors: 0, Warnings: 0
+===== dff_async_tb
+# ** Note: (vsim-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) '/home/ckdrhd/VHDL-SIMULATION/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: Clear (no clock edge): clk=0 d=0 set=0 clr=1 -> q=0 qn=1
+#    Time: 10 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Hold: clk=0 d=0 set=0 clr=0 -> q=0 qn=1
+#    Time: 20 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Set (no clock edge): clk=0 d=0 set=1 clr=0 -> q=1 qn=0
+#    Time: 30 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Hold after set: clk=0 d=0 set=0 clr=0 -> q=1 qn=0
+#    Time: 40 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Clear (no clock edge): clk=0 d=0 set=0 clr=1 -> q=0 qn=1
+#    Time: 50 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Set and clear: clear wins: clk=0 d=1 set=1 clr=1 -> q=0 qn=1
+#    Time: 60 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Set and clear, rising edge d=1: clk=1 d=1 set=1 clr=1 -> q=0 qn=1
+#    Time: 70 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Clear released, set remains: clk=1 d=1 set=1 clr=0 -> q=1 qn=0
+#    Time: 80 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Normal, falling edge: clk=0 d=0 set=0 clr=0 -> q=1 qn=0
+#    Time: 90 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Normal, rising edge captures 0: clk=1 d=0 set=0 clr=0 -> q=0 qn=1
+#    Time: 100 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Normal, falling edge: clk=0 d=1 set=0 clr=0 -> q=0 qn=1
+#    Time: 110 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Normal, rising edge captures 1: clk=1 d=1 set=0 clr=0 -> q=1 qn=0
+#    Time: 120 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Normal, clk=1 d changes: clk=1 d=0 set=0 clr=0 -> q=1 qn=0
+#    Time: 130 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Clear while clk=1: clk=1 d=0 set=0 clr=1 -> q=0 qn=1
+#    Time: 140 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Set while clk=1: clk=1 d=1 set=1 clr=0 -> q=1 qn=0
+#    Time: 150 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Set held, clk falls: clk=0 d=0 set=1 clr=0 -> q=1 qn=0
+#    Time: 160 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Set overrides rising edge d=0: clk=1 d=0 set=1 clr=0 -> q=1 qn=0
+#    Time: 170 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Clear held, clk falls: clk=0 d=1 set=0 clr=1 -> q=0 qn=1
+#    Time: 180 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Clear overrides rising edge d=1: clk=1 d=1 set=0 clr=1 -> q=0 qn=1
+#    Time: 190 ns  Iteration: 0  Instance: /dff_async_tb
+# ** Note: Simulation done
+#    Time: 190 ns  Iteration: 0  Instance: /dff_async_tb
+# Errors: 0, Warnings: 0
